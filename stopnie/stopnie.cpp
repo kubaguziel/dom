@@ -1,17 +1,19 @@
 ﻿
 #include <iostream>
+#include <iomanip>
 
 int main()
 {
-	long int f;
-	float c=0.00;
+	double f;
+	double c;
 	
 	std::cin >> f;
-	if (f >= -459 && f <= 1000000000)
+	if (f >= -459.00 && f <= 10000000.00)
 	{
-		c = (f-32)*(5/9);
-		std::cout.precision(3);
-		std::cout << c;
+		c = (f-32.00)*(5.00/9.00);
+		std::cout << std::fixed;
+		std::cout << std::setprecision(2) << c;
+
 	}
 	
 }
