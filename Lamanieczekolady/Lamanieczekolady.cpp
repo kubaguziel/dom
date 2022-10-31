@@ -13,7 +13,7 @@ int main()
         std::cin >> k;
         if(k>=1&&k<=1000000)
         {
-            if (k % n == 0 || k % m == 0)
+            if ((k % n == 0 || k % m == 0)&&(m*n)>k)
             {
                 std::cout << "TAK";
             }
