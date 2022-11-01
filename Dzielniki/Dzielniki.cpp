@@ -2,11 +2,11 @@
 
 int main()
 {
-    long int n,dzielnik;
+    std::ios_base::sync_with_stdio(false);
+    std::cin.tie(nullptr);
+    unsigned long long n,dzielnik;
     std::cin >> n;
-    if (n>0&&n<=1000000000000)
-    {
-        for (int i = n; i > 0; i--)
+     for (int i = n; i > 0; i--)
         {
             if ((n % i) == 0)
             {
@@ -14,7 +14,5 @@ int main()
                 std::cout << dzielnik << std::endl;
             }
 
-        }
-    }
-    
+        }   
 }
